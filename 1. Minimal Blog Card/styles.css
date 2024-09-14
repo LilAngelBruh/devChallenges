@@ -24,6 +24,7 @@ body{
 
 .card-image img{
     box-sizing: content-box;
+    border-radius: 12px;
     max-width: 336px;
     max-height: 152px;
 }
