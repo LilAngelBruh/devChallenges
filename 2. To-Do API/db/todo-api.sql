@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS todo_list_api;
+/* DROP DATABASE todo_list_api */
+USE todo_list_api;
+CREATE TABLE IF NOT EXISTS users(
+	`id` INT AUTO_INCREMENT PRIMARY KEY,
+    `name` NVARCHAR(50) NOT NULL,
+    `email` NVARCHAR(255) NOT NULL UNIQUE,
+    `password` NVARCHAR(25) NOT NULL
+);
+
+SELECT * FROM users
